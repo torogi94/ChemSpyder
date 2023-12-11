@@ -3,7 +3,6 @@ import sdRDM
 from typing import Optional
 from pydantic import Field, PrivateAttr
 from sdRDM.base.utils import forge_signature, IDGenerator
-
 from datetime import datetime as Datetime
 
 
@@ -26,10 +25,9 @@ class Collection(sdRDM.DataModel):
         default=None,
         description="The timestamp of this Collection's creation.",
     )
-
     __repo__: Optional[str] = PrivateAttr(
         default="https://github.com/torogi94/ChemSpyder"
     )
     __commit__: Optional[str] = PrivateAttr(
-        default="beaf1b83f535ac4155dab09fb9d3183a3b526dd9"
+        default="dec76b5360a37cdb554367e24b74c930487df95c"
     )
